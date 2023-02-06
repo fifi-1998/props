@@ -1,0 +1,22 @@
+ 
+.Profile{
+    background-color: rgb(237, 241, 228);
+    width: 50%;
+    margin: 10px;
+   
+
+}
+.item{
+    border: 1px solid rgb(238, 232, 232);
+    background-color: rgb(176, 199, 218);
+    padding: 30px;
+    margin: 10px;
+
+}
+img { 
+    width: 200px;
+    border-radius: 90px;
+}
+h1{ 
+    color: rgb(10, 1, 17);
+  font-family: 'Roboto', sans-serif;}

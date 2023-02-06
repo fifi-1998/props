@@ -1,26 +1,20 @@
-import logo from "./logo.svg";
-import "./App.css";
-import Profile from "./Profile/Profile";
-import profileImage from "./ProfilePhoto.jpg";
+import "./Components/Profile/style.css";
+import Profile from "./Components/Profile/Profile.jsx";
 
 function App() {
-  function HandleName(fullname) {
-    alert(`my name is ${fullname}`);
-  }
+  const data = [
+    {
+      fullname: " Mejri Feriel",
+      bio: " A hardworking girl the with love of movies and music ",
+      profession: " Data science and web devoleper ",
+    },
+  ];
+  const handleName = (name) => {
+    alert(`Welcome ${name}`);
+  };
   return (
     <div className="App">
-      <Profile
-        fullname="Mejri Feriel"
-        bio="web developper"
-        profession="web developper"
-        HandleName={HandleName}
-      >
-        <img
-          src={profileImage}
-          alt="image de Nawres"
-          style={{ height: "200px", width: "100" }}
-        />
-      </Profile>
+      <Profile data={data} handleName={handleName} />
     </div>
   );
 }
